@@ -10,7 +10,7 @@ function App() {
     e.preventDefault(); 
 
     try {
-      const result = await axios.post("http://localhost:3000/api/generate", {
+      const result = await axios.post("https://content-generation-server.onrender.com/api/generate", {
         textField,
       });
       setResponse(result.data); 
